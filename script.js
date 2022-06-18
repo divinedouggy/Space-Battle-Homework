@@ -41,18 +41,22 @@ function yourAttack() {
     if (Math.random() < .7) {
         // alienShip.hull -= yourShip.firepower
         console.log('You hit the alien scum!');
+        console.log(alienShip.hull)
+        alienShip.hull -= 5;
+        console.log(alienShip.hull)
+        console.log('')
     } else {
         console.log('Dang! You missed!');
     } 
 }
 yourAttack()
 
-// // Their attack
-// function enemyAttack () {
-//     if (Math.random() < alien[0].accuracy) {
-//         target.hull -= 
-//         console.log('You have been hit!');
-//     }
-// }
+// Their attack
+function enemyAttack () {
+    if (Math.random() < alien[0].accuracy) {
+        target.hull -= 
+        console.log('You have been hit!');
+    }
+}
 
 
